@@ -47,8 +47,7 @@ Clone the repository and install all required packages:
 4. #### Install the Jupyter kernel
     Activate the Poetry environment and register it as a Jupyter kernel so it can be used within notebooks:
     ```bash
-    poetry shell
-    python -m ipykernel install --user --name=notebooks-nwp-env --display-name "Python (notebooks-nwp-env)"
+    poetry run python -m ipykernel install --user --name=notebooks-nwp-env --display-name "Python (notebooks-nwp-env)"
     ```
 
 5. #### Open and run notebooks
