@@ -15,6 +15,7 @@ This repository provides Jupyter notebook examples for accessing and processing 
 
 - [**01_retrieve_process_precip.ipynb**](01_retrieve_process_precip.ipynb)- Retrieve and load precipitation forecasts as an Xarray object, then process, analyze, and visualize the data using Python tools.
 - [**02_download_soil_temp.ipynb**](02_download_soil_temp.ipynb) — Download forecast files to disk for offline storage, external tools, or advanced manual processing.
+- [**03_calculate_wind_speed.ipynb**](03_calculate_wind_speed.ipynb) — Retrieve wind component forecasts as Xarray objects and derive the horizontal wind speed using the Python library [meteodata-lab](https://meteoswiss.github.io/meteodata-lab/).
 
 ## 🚀 Getting Started
 
