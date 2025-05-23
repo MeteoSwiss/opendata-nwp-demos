@@ -1,6 +1,5 @@
 import os
 
-# Return list of colors instead of a colormap object
 def load_ncl_rgb_colors(name, base_path="plot_utils/colormaps"):
     path = os.path.join(base_path, f"{name}.rgb")
     if not os.path.exists(path):
