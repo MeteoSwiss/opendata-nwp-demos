@@ -1,20 +1,24 @@
-from shapely.geometry import MultiPoint
 import numpy as np
+from shapely.geometry import MultiPoint
 
-def get_valid_data_frame(data_array, level_idx=(0, 0)):
+def get_valid_data_frame(data_array):
     """
-    Computes a convex hull polygon around valid (non-NaN) data points 
-    in an xarray DataArray with shape [eps, ref_time, y, x].
+    Computes a polygon around valid (non-NaN) data points 
+    in an xarray.DataArray using dimensions 'x' and 'y'.
 
     Parameters:
-    - data_array: xarray.DataArray
-    - level_idx: tuple, index to select the 2D slice (e.g., (0, 0) for [eps, ref_time])
+    - data_array: xarray.DataArray with dimensions including 'x' and 'y'
 
     Returns:
     - frame_polygon: shapely.geometry.Polygon or None
     """
-    data_2d = data_array.values[level_idx[0], level_idx[1]]
-    valid_mask = ~np.isnan(data_2d)
+    # Select just the 2D spatial slice (last over x/y, squeeze all others)
+    data_2d = data_array.sel(x=data_array.x, y=data_array.y).squeeze()
+
+    if data_2d.ndim != 2:
+        raise ValueError("Data must be 2D after squeezing non-x/y dimensions.")
+
+    valid_mask = ~np.isnan(data_2d.values)
 
     lat = data_array.lat.values
     lon = data_array.lon.values
@@ -23,6 +27,7 @@ def get_valid_data_frame(data_array, level_idx=(0, 0)):
     valid_lon = lon[valid_mask]
 
     if len(valid_lat) < 3:
-        return None  # Can't create a polygon with fewer than 3 points
+        return None  # Not enough valid points for a polygon
+
     points = MultiPoint(list(zip(valid_lon, valid_lat)))
     return points.convex_hull
