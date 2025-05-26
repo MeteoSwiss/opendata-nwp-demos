@@ -17,6 +17,7 @@ This repository provides Jupyter notebook examples for accessing and processing 
 - [**02_download_soil_temp.ipynb**](02_download_soil_temp.ipynb) — Download forecast files to disk for offline storage, external tools, or advanced manual processing.
 - [**03_calculate_wind_speed.ipynb**](03_calculate_wind_speed.ipynb) — Retrieve wind component forecasts as Xarray objects and derive the horizontal wind speed using the Python library [meteodata-lab](https://meteoswiss.github.io/meteodata-lab/).
 - [**04_calculate_rel_humidity.ipynb**](04_calculate_rel_humidity.ipynb) — Retrieve specific humidity, temperature and pressure as Xarray objects and compute relative humidity using [meteodata-lab](https://meteoswiss.github.io/meteodata-lab/).
+- [**05_interpolate_to_pressure_levels.ipynb**](05_interpolate_to_pressure_levels.ipynb) — Retrieve temperature forecasts as an Xarray object and interpolate from model levels to pressure levels using [meteodata-lab](https://meteoswiss.github.io/meteodata-lab/).
 
 ## 🚀 Getting Started
 
