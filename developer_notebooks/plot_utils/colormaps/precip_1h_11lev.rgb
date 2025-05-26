@@ -1,5 +1,5 @@
 # Converted from MeteoSwiss NCL library
-# Description: Color table for 3-daily precipitation as in model browser
+# Description: Color table precipitation
 11
 0.1 1. 2. 4. 6. 9. 12. 15. 20. 25. 30. 35.
 255 255 255
