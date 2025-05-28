@@ -13,15 +13,18 @@ This repository provides Jupyter notebook examples for accessing and processing 
 
 ## 📓 Notebooks
 
-- [**01_retrieve_process_precip.ipynb**](01_retrieve_process_precip.ipynb) — Retrieve and load precipitation forecasts as an Xarray object, then process, analyze, and visualize the data using Python tools.
-- [**02_download_soil_temp.ipynb**](02_download_soil_temp.ipynb) — Download forecast files to disk for offline storage, external tools, or advanced manual processing.
-- [**03_calculate_wind_speed.ipynb**](03_calculate_wind_speed.ipynb) — Retrieve wind component forecasts as Xarray objects and derive the horizontal wind speed using the Python library [meteodata-lab](https://meteoswiss.github.io/meteodata-lab/).
-- [**04_calculate_rel_humidity.ipynb**](04_calculate_rel_humidity.ipynb) — Retrieve specific humidity, temperature and pressure as Xarray objects and compute relative humidity using [meteodata-lab](https://meteoswiss.github.io/meteodata-lab/).
-- [**05_interpolate_to_pressure_levels.ipynb**](05_interpolate_to_pressure_levels.ipynb) — Retrieve temperature forecasts as an Xarray object and interpolate from model levels to pressure levels using [meteodata-lab](https://meteoswiss.github.io/meteodata-lab/).
+- [**01_retrieve_process_precip.ipynb**](01_retrieve_process_precip.ipynb) — Retrieve and load precipitation forecasts as an Xarray object, then process, analyze, and visualize the data using Python tools. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MeteoSwiss/opendata-nwp-demos/blob/main/01_retrieve_process_precip.ipynb)
+- [**02_download_soil_temp.ipynb**](02_download_soil_temp.ipynb) — Download forecast files to disk for offline storage, external tools, or advanced manual processing. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MeteoSwiss/opendata-nwp-demos/blob/main/02_download_soil_temp.ipynb)
+- [**03_calculate_wind_speed.ipynb**](03_calculate_wind_speed.ipynb) — Retrieve wind component forecasts as Xarray objects and derive the horizontal wind speed using the Python library [meteodata-lab](https://meteoswiss.github.io/meteodata-lab/). [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MeteoSwiss/opendata-nwp-demos/blob/main/03_calculate_wind_speed.ipynb)
+- [**04_calculate_rel_humidity.ipynb**](04_calculate_rel_humidity.ipynb) — Retrieve specific humidity, temperature and pressure as Xarray objects and compute relative humidity. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MeteoSwiss/opendata-nwp-demos/blob/main/04_calculate_rel_humidity_clean.ipynb)
+- [**05_interpolate_to_pressure_levels.ipynb**](05_interpolate_to_pressure_levels.ipynb) — Retrieve temperature forecasts as an Xarray object and interpolate from model levels to pressure levels. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MeteoSwiss/opendata-nwp-demos/blob/main/05_interpolate_to_pressure_levels_clean.ipynb)
 
 ## 🚀 Getting Started
+### Option 1: Run in Google Colab
 
-### Install Dependencies
+Open the notebook in Google Colab. The first code cell will install all dependencies automatically only in Colab.
+
+### Option 2: Install Dependencies to Run Locally
 
 Clone the repository and install all required packages. This project requires **Python 3.11** and [Poetry](https://python-poetry.org/docs/) to manage dependencies and environments.
 
