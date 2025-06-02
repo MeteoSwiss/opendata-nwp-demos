@@ -24,7 +24,7 @@ This repository provides Jupyter notebook examples for accessing and processing 
 
 Open the notebook in Google Colab. The first code cell will install all dependencies automatically only in Colab.
 
-### Option 2: Install Dependencies to Run Locally
+### Option 2: Run locally
 
 Clone the repository and install all required packages. This project requires **Python 3.11** and [Poetry](https://python-poetry.org/docs/) to manage dependencies and environments.
 
