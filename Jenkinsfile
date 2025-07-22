@@ -1,3 +1,8 @@
+class Globals {
+
+    // Pin mchbuild to stable version to avoid breaking changes
+    static String mchbuildVersion = '0.8.0'
+}
 pipeline {
     agent {
         label 'redhat'
@@ -28,7 +33,7 @@ pipeline {
                     sh """
                     python -m venv .venv-mchbuild
                     PIP_INDEX_URL=https://hub.meteoswiss.ch/nexus/repository/python-all/simple \
-                    .venv-mchbuild/bin/pip install --upgrade mchbuild
+                    .venv-mchbuild/bin/pip install mchbuild==${Globals.mchbuildVersion}
                     """
                 }
             }
