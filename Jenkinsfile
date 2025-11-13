@@ -8,8 +8,8 @@ pipeline {
         label 'redhat'
     }
     triggers {
-        // Run the job daily at 2:30 AM
-        cron('30 2 * * *')
+        // Run the job daily at 4:30 AM (not UTC)
+        cron('30 4 * * *')
     }
     environment {
         PATH = "$workspace/.venv-mchbuild/bin:$PATH"
