@@ -1,9 +1,10 @@
 default:
   - test:
     - notebooks_execution:
-        pythonRun:
-          pythonImageName: 3.11
-          commands: >
-            poetry install --with test &&
-            poetry run python -m ipykernel install --user --name=notebooks-nwp-env --display-name "Python (notebooks-nwp-env)" &&
-            poetry run python check_notebooks.py
+        pythonContainerRun:
+          pythonVersion: '3.11'
+          installDependencies: true
+          # Note: the 'poetry run' prefix is automatically added to each command
+          commands: |-
+            python -m ipykernel install --user --name=notebooks-nwp-env --display-name "Python (notebooks-nwp-env)" &&
+            python check_notebooks.py
