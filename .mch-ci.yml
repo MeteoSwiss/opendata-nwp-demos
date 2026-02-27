@@ -7,5 +7,5 @@ default:
           packageManager: ''         # disable automatically adding the 'poetry run' prefix to each command
           commands: |-
             poetry install --with test
-            poetry run python -m ipykernel install --user --name=notebooks-nwp-env --display-name "Python (notebooks-nwp-env)" &&
+            poetry run python -m ipykernel install --user --name=notebooks-nwp-env --display-name "Python (notebooks-nwp-env)"
             poetry run python check_notebooks.py
