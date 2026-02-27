@@ -3,8 +3,9 @@ default:
     - notebooks_execution:
         pythonContainerRun:
           pythonVersion: '3.11'
-          installDependencies: true
-          # Note: the 'poetry run' prefix is automatically added to each command
+          installDependencies: false # would execute "poetry install --with-extras", without optional 'test' dependency
+          packageManager: ''         # disable automatically adding the 'poetry run' prefix to each command
           commands: |-
-            python -m ipykernel install --user --name=notebooks-nwp-env --display-name "Python (notebooks-nwp-env)" &&
-            python check_notebooks.py
+            poetry install --with test
+            poetry run python -m ipykernel install --user --name=notebooks-nwp-env --display-name "Python (notebooks-nwp-env)" &&
+            poetry run python check_notebooks.py
