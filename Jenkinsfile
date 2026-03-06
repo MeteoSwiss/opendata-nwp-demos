@@ -61,7 +61,7 @@ pipeline {
 The pipeline which checks the execution of the notebooks failed:
 ${env.BUILD_URL}
                 """,
-                to: env.BRANCH_NAME == 'main' ? "nina.burgdorfer@meteoswiss.ch" : "",
+                to: env.BRANCH_NAME == 'main' ? "p_polytope@meteoswiss.ch" : "",
                 recipientProviders: [requestor(), developers()]
             )
         }
