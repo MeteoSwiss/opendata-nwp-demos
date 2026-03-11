@@ -1,11 +1,11 @@
 class Globals {
 
     // Pin mchbuild to stable version to avoid breaking changes
-    static String mchbuildVersion = '0.8.0'
+    static String mchbuildPipPackage = 'mchbuild>=1.0.0,<2.0.0'
 }
 pipeline {
     agent {
-        label 'redhat'
+        label 'podman'
     }
     triggers {
         // Run the job daily at 3:30 UTC
@@ -29,11 +29,11 @@ pipeline {
         stage('Setup') {
             steps {
                 script {
-                    echo "---- INSTALL MCHBUILD ----"
+                    echo '---- INSTALLING MCHBUILD ----'
                     sh """
-                    python -m venv .venv-mchbuild
-                    PIP_INDEX_URL=https://hub.meteoswiss.ch/nexus/repository/python-all/simple \
-                    .venv-mchbuild/bin/pip install mchbuild==${Globals.mchbuildVersion}
+                        python -m venv .venv-mchbuild
+                        PIP_INDEX_URL=https://hub.meteoswiss.ch/nexus/repository/python-all/simple \
+                            .venv-mchbuild/bin/pip install --upgrade "${Globals.mchbuildPipPackage}"
                     """
                 }
             }
@@ -61,7 +61,7 @@ pipeline {
 The pipeline which checks the execution of the notebooks failed:
 ${env.BUILD_URL}
                 """,
-                to: "nina.burgdorfer@meteoswiss.ch",
+                to: env.BRANCH_NAME == 'main' ? "p_polytope@meteoswiss.ch" : "",
                 recipientProviders: [requestor(), developers()]
             )
         }
@@ -73,5 +73,3 @@ ${env.BUILD_URL}
         }
     }
 }
-
-
