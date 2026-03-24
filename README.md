@@ -24,9 +24,9 @@ This repository provides Jupyter notebook examples for accessing and processing 
 
 
 ## 🚀 Getting Started
-### Option 1: Run in Renku
+### Option 1: Run in RenkuLab
 
-Open the notebook in [Renkulab](https://renkulab.io/). You can run the notebook without any further installtion.
+Open the notebook in [RenkuLab](https://renkulab.io/). You can run the notebook without any further installtion.
 
 ### Option 2: Run locally
 
