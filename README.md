@@ -24,9 +24,9 @@ This repository provides Jupyter notebook examples for accessing and processing 
 
 
 ## 🚀 Getting Started
-### Option 1: Run in Google Colab
+### Option 1: Run in Renku
 
-Open the notebook in Google Colab. The first code cell will install all dependencies automatically only in Colab.
+Open the notebook in [Renkulab](https://renkulab.io/). You can run the notebook without any further installtion.
 
 ### Option 2: Run locally
 
