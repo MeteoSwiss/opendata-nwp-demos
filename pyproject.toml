@@ -18,7 +18,7 @@ rasterio = "^1.4.3"
 optional = true
 
 [tool.poetry.group.test.dependencies]
-nbconvert = "^7.16.6"
+nbconvert = "^7.17.0"
 nbformat = "^5.10.4"
 
 
