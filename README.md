@@ -24,11 +24,11 @@ This repository provides Jupyter notebook examples for accessing and processing 
 
 
 ## 🚀 Getting Started
-### Option 1: Run in RenkuLab
+### Option 1: Run in [RenkuLab](https://renkulab.io/)
 
-1. Open the notebooks in [RenkuLab](https://renkulab.io/). 
+1. Open the notebooks: [![launch - renku](https://renkulab.io/renku-badge.svg)](https://renkulab.io/p/meteoswiss/opendata-nwp-demos/sessions/01KME52HC2FZ6ZHB30SSFG08PW/start).
 2. Navigate to the folder `opendata-nwp-demos`.
-3. Click on the notebook you would like to try. You can run the notebook without any further installtion.
+3. Click on the notebook you would like to try (e.g. `01_retrieve_process_precip.ipynb`). You can run the notebook without any further installtion.
 
 ### Option 2: Run locally
 
