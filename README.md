@@ -23,7 +23,7 @@ This repository provides Jupyter notebook examples for accessing and processing 
 - [**06_calculate_global_rad_flux.ipynb**](06_calculate_global_rad_flux.ipynb) — Retrieve direct and diffuse shortwave radiation fluxes from ICON-CH1-EPS forecasts and compute the **Global Radiation Flux** (`GLOB`) using [meteodata-lab](https://meteoswiss.github.io/meteodata-lab/). Includes a de-aggregation step to convert cumulative flux values into hourly averages.
 - [**07_where_will_it_rain_next_24h.ipynb**](07_where_will_it_rain_next_24h.ipynb) — Visualize the probability of precipitation over Switzerland for the next 24 hours using ICON-CH1-EPS ensembles.
 - [**08_where_will_the_sun_shine.ipynb**](08_where_will_the_sun_shine.ipynb) — Use ICON-CH2-EPS forecasts to map the probability of experiencing over 6 hours of sunshine on the **day after tomorrow**.
-- [**09_constant_parameters.ipynb**](09_constant_parameters.ipynb) — Retrieve constant run parameters such as grid definition, vertical layers, and surface descriptors, and check that they match the forecast parameters.
+- [**09_constant_parameters.ipynb**](09_constant_parameters.ipynb) — Retrieve constant run parameters such as grid definition, vertical layers, and surface descriptors, and check that they match the forecast parameters. Includes plotting a vertical profile and grouping by surface height.
 
 
 ## 🚀 Getting Started
