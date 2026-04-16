@@ -15,14 +15,15 @@ This repository provides Jupyter notebook examples for accessing and processing 
 
 👉 [![launch - renku](https://renkulab.io/renku-badge.svg)](https://renkulab.io/p/meteoswiss/opendata-nwp-demos/sessions/01KME52HC2FZ6ZHB30SSFG08PW/start)
 
-- [**01_retrieve_process_precip.ipynb**](01_retrieve_process_precip.ipynb) — Retrieve and load precipitation forecasts as an Xarray object, then process, analyze, and visualize the data using Python tools. 
+- [**01_retrieve_process_precip.ipynb**](01_retrieve_process_precip.ipynb) — Retrieve and load precipitation forecasts as an Xarray object, then process, analyze, and visualize the data using Python tools.
 - [**02_download_soil_temp.ipynb**](02_download_soil_temp.ipynb) — Download forecast files to disk for offline storage, external tools, or advanced manual processing.
-- [**03_calculate_wind_speed.ipynb**](03_calculate_wind_speed.ipynb) — Retrieve wind component forecasts as Xarray objects and derive the horizontal wind speed using the Python library [meteodata-lab](https://meteoswiss.github.io/meteodata-lab/). 
+- [**03_calculate_wind_speed.ipynb**](03_calculate_wind_speed.ipynb) — Retrieve wind component forecasts as Xarray objects and derive the horizontal wind speed using the Python library [meteodata-lab](https://meteoswiss.github.io/meteodata-lab/).
 - [**04_calculate_rel_humidity.ipynb**](04_calculate_rel_humidity.ipynb) — Retrieve specific humidity, temperature and pressure as Xarray objects and compute relative humidity.
-- [**05_interpolate_vertically.ipynb**](05_interpolate_vertically.ipynb) — Retrieve temperature forecasts as an Xarray object and perform two types of vertical interpolation: from model levels to pressure levels, and from model levels to a target altitude. 
-- [**06_calculate_global_rad_flux.ipynb**](06_calculate_global_rad_flux.ipynb) — Retrieve direct and diffuse shortwave radiation fluxes from ICON-CH1-EPS forecasts and compute the **Global Radiation Flux** (`GLOB`) using [meteodata-lab](https://meteoswiss.github.io/meteodata-lab/). Includes a de-aggregation step to convert cumulative flux values into hourly averages. 
+- [**05_interpolate_vertically.ipynb**](05_interpolate_vertically.ipynb) — Retrieve temperature forecasts as an Xarray object and perform two types of vertical interpolation: from model levels to pressure levels, and from model levels to a target altitude.
+- [**06_calculate_global_rad_flux.ipynb**](06_calculate_global_rad_flux.ipynb) — Retrieve direct and diffuse shortwave radiation fluxes from ICON-CH1-EPS forecasts and compute the **Global Radiation Flux** (`GLOB`) using [meteodata-lab](https://meteoswiss.github.io/meteodata-lab/). Includes a de-aggregation step to convert cumulative flux values into hourly averages.
 - [**07_where_will_it_rain_next_24h.ipynb**](07_where_will_it_rain_next_24h.ipynb) — Visualize the probability of precipitation over Switzerland for the next 24 hours using ICON-CH1-EPS ensembles.
-- [**08_where_will_the_sun_shine.ipynb**](08_where_will_the_sun_shine.ipynb) — Use ICON-CH2-EPS forecasts to map the probability of experiencing over 6 hours of sunshine on the **day after tomorrow**. 
+- [**08_where_will_the_sun_shine.ipynb**](08_where_will_the_sun_shine.ipynb) — Use ICON-CH2-EPS forecasts to map the probability of experiencing over 6 hours of sunshine on the **day after tomorrow**.
+- [**09_constant_parameters.ipynb**](09_constant_parameters.ipynb) — Retrieve constant run parameters such as grid definition, vertical layers, and surface descriptors, and verify grid consistency with forecast parameters. Includes plotting a vertical profile and grouping by surface height.
 
 
 ## 🚀 Getting Started
