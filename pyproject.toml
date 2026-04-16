@@ -13,7 +13,6 @@ meteodata-lab = {extras = ["regrid"], version = "~0.4"}
 earthkit-plots = "^0.3"
 ipykernel = "^6.29.5"
 rasterio = "^1.4.3"
-kaleido = "^1.2.0"
 earthkit-geo = "^0.5.2"
 
 [tool.poetry.group.test]
