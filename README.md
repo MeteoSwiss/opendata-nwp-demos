@@ -98,7 +98,7 @@ For more context on the available numerical weather forecast data and how it’s
 ## 💬 Feedbacks
 Feel free to open issues to suggest improvements or contribute new examples!
 
-## Developers
+## 🧑‍💻 Developers
 
 When making a change:
 
