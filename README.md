@@ -97,3 +97,14 @@ For more context on the available numerical weather forecast data and how it’s
 
 ## 💬 Feedbacks
 Feel free to open issues to suggest improvements or contribute new examples!
+
+## Developers
+
+When making a change:
+
+1. Work on the notebook in `developer_notebooks/`.
+2. Commit the developer notebook **without outputs**. This keeps PR review manageable.
+3. Once the developer notebook has been reviewed, run it and save the corresponding notebook **with outputs** at the top level of the repository. This is the version users will look at.
+4. If dependencies or the virtual environment changed, rebuild the [RenkuLab image](https://renkulab.io/p/meteoswiss/opendata-nwp-demos).
+
+To rebuild the image, you need access to the Renku project. Each developer can create a Renku account using their MeteoSwiss address and then ask Daniele Nerini to be added to our project.
