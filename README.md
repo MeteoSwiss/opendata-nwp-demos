@@ -108,4 +108,6 @@ When making a change:
 4. Once the developer notebook has been reviewed, run it and save the corresponding notebook **with outputs** at the top level of the repository, without the `_clean` suffix. This is the version users will look at.
 5. If dependencies or the virtual environment changed, rebuild the [RenkuLab image](https://renkulab.io/p/meteoswiss/opendata-nwp-demos).
 
-To rebuild the image, you need access to the Renku project. Each developer can create a Renku account using their MeteoSwiss address and then ask Daniele Nerini to be added to our project.
+To rebuild the image, you need access to the Renku project. Create a Renku account with your MeteoSwiss address, then ask a project maintainer to add your Renku username to the project.
+
+For more information about Renku at MeteoSwiss, see the [Renku documentation](https://meteoswiss.atlassian.net/wiki/spaces/MLOpsMCH/pages/346298461/Renku).
