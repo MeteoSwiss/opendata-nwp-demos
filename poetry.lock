@@ -1943,14 +1943,14 @@ files = [
 
 [[package]]
 name = "meteodata-lab"
-version = "0.7.0"
+version = "0.7.1"
 description = "A data post-processing framework on the basis of xarray."
 optional = false
 python-versions = "<3.13,>=3.10"
 groups = ["main"]
 files = [
-    {file = "meteodata_lab-0.7.0-py3-none-any.whl", hash = "sha256:63aed00afb11f8055a4c689d474b2c4e14eb7587e29f173954f77e2ee8625605"},
-    {file = "meteodata_lab-0.7.0.tar.gz", hash = "sha256:8ce9ce82a1644fe884c66bc3cd620aaa29832b875cd94f534e7fdb57a163c8dd"},
+    {file = "meteodata_lab-0.7.1-py3-none-any.whl", hash = "sha256:e995e986c62e1eaf17eca341d667379ef93d6e529ced0ee3ab9e8e4f10a0bf9e"},
+    {file = "meteodata_lab-0.7.1.tar.gz", hash = "sha256:00a617495f1d8ce533dbaed476b2f02a044407a3ddecd292393c22cc517379cd"},
 ]
 
 [package.dependencies]
@@ -3983,4 +3983,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10,<3.13"
-content-hash = "59e92a48deb0ddd3e1fce236e83fef7c35e9c8e2cebf78b9b4a314d9c83bc1e5"
+content-hash = "784497878b168c39a5099267449fb9b759805dee0f722bc568135dc732363f38"
