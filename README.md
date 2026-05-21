@@ -25,6 +25,7 @@ This repository provides Jupyter notebook examples for accessing and processing 
 - [**08_where_will_the_sun_shine.ipynb**](08_where_will_the_sun_shine.ipynb) — Use ICON-CH2-EPS forecasts to map the probability of experiencing over 6 hours of sunshine on the **day after tomorrow**.
 - [**09_constant_parameters.ipynb**](09_constant_parameters.ipynb) — Retrieve constant run parameters such as grid definition, vertical layers, and surface descriptors, and verify grid consistency with forecast parameters. Includes plotting a vertical profile and grouping by surface height.
 - [**10_icon_ch2_pollen_forecast.ipynb**](10_icon_ch2_pollen_forecast.ipynb) — Retrieve and load pollen forecasts as an xarray object, then convert from specific number concentration to volume concentration, and visualize the data using Python tools.
+- [**11_analysis_data.ipynb**](11_analysis_data.ipynb) — Retrieve and load KENDA CH1 analysis data and visualize the maximum wind gusts of a past hour using Python tools.
 
 ## 🚀 Getting Started
 ### Option 1: Run in [RenkuLab](https://renkulab.io/)
