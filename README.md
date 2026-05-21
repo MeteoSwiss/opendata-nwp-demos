@@ -24,8 +24,8 @@ This repository provides Jupyter notebook examples for accessing and processing 
 - [**07_where_will_it_rain_next_24h.ipynb**](07_where_will_it_rain_next_24h.ipynb) — Visualize the probability of precipitation over Switzerland for the next 24 hours using ICON-CH1-EPS ensembles.
 - [**08_where_will_the_sun_shine.ipynb**](08_where_will_the_sun_shine.ipynb) — Use ICON-CH2-EPS forecasts to map the probability of experiencing over 6 hours of sunshine on the **day after tomorrow**.
 - [**09_constant_parameters.ipynb**](09_constant_parameters.ipynb) — Retrieve constant run parameters such as grid definition, vertical layers, and surface descriptors, and verify grid consistency with forecast parameters. Includes plotting a vertical profile and grouping by surface height.
+- [**10_icon_ch2_pollen_forecast.ipynb**](10_icon_ch2_pollen_forecast.ipynb) — Retrieve and load pollen forecasts as an xarray object, then convert from specific number concentration to volume concentration, and visualize the data using Python tools.
 - [**11_analysis_data.ipynb**](11_analysis_data.ipynb) — Retrieve and load KENDA CH1 analysis data and visualize the maximum wind gusts of a past hour using Python tools.
-
 
 ## 🚀 Getting Started
 ### Option 1: Run in [RenkuLab](https://renkulab.io/)
@@ -98,3 +98,17 @@ For more context on the available numerical weather forecast data and how it’s
 
 ## 💬 Feedbacks
 Feel free to open issues to suggest improvements or contribute new examples!
+
+## 🧑‍💻 Developers
+
+When making a change:
+
+1. Work on the notebook in `developer_notebooks/`.
+2. Developer notebooks should use the `_clean` suffix, for example `09_notebook_clean.ipynb`.
+3. Commit the developer notebook **without outputs**. This keeps PR review manageable and avoids noisy diffs from generated output.
+4. Once the developer notebook has been reviewed, run it and save the corresponding notebook **with outputs** at the top level of the repository, without the `_clean` suffix. This is the version users will look at.
+5. If dependencies or the virtual environment changed, rebuild the [RenkuLab image](https://renkulab.io/p/meteoswiss/opendata-nwp-demos).
+
+To rebuild the image, you need access to the Renku project. Create a Renku account with your MeteoSwiss address, then ask a project maintainer to add your Renku username to the project.
+
+For more information about Renku at MeteoSwiss, see the [Renku documentation](https://meteoswiss.atlassian.net/wiki/spaces/MLOpsMCH/pages/346298461/Renku).
