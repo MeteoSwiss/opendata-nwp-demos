@@ -13,82 +13,71 @@ This repository provides Jupyter notebook examples for accessing and processing 
 
 ## 📓 Notebooks
 
-👉 [![launch - renku](https://renkulab.io/renku-badge.svg)](https://renkulab.io/p/meteoswiss/opendata-nwp-demos/sessions/01KME52HC2FZ6ZHB30SSFG08PW/start)
+You can run the notebooks in two ways:
 
-- [**01_retrieve_process_precip.ipynb**](01_retrieve_process_precip.ipynb) — Retrieve and load precipitation forecasts as an Xarray object, then process, analyze, and visualize the data using Python tools.
-- [**02_download_soil_temp.ipynb**](02_download_soil_temp.ipynb) — Download forecast files to disk for offline storage, external tools, or advanced manual processing.
-- [**03_calculate_wind_speed.ipynb**](03_calculate_wind_speed.ipynb) — Retrieve wind component forecasts as Xarray objects and derive the horizontal wind speed using the Python library [meteodata-lab](https://meteoswiss.github.io/meteodata-lab/).
-- [**04_calculate_rel_humidity.ipynb**](04_calculate_rel_humidity.ipynb) — Retrieve specific humidity, temperature and pressure as Xarray objects and compute relative humidity.
-- [**05_interpolate_vertically.ipynb**](05_interpolate_vertically.ipynb) — Retrieve temperature forecasts as an Xarray object and perform two types of vertical interpolation: from model levels to pressure levels, and from model levels to a target altitude.
-- [**06_calculate_global_rad_flux.ipynb**](06_calculate_global_rad_flux.ipynb) — Retrieve direct and diffuse shortwave radiation fluxes from ICON-CH1-EPS forecasts and compute the **Global Radiation Flux** (`GLOB`) using [meteodata-lab](https://meteoswiss.github.io/meteodata-lab/). Includes a de-aggregation step to convert cumulative flux values into hourly averages.
-- [**07_where_will_it_rain_next_24h.ipynb**](07_where_will_it_rain_next_24h.ipynb) — Visualize the probability of precipitation over Switzerland for the next 24 hours using ICON-CH1-EPS ensembles.
-- [**08_where_will_the_sun_shine.ipynb**](08_where_will_the_sun_shine.ipynb) — Use ICON-CH2-EPS forecasts to map the probability of experiencing over 6 hours of sunshine on the **day after tomorrow**.
-- [**09_constant_parameters.ipynb**](09_constant_parameters.ipynb) — Retrieve constant run parameters such as grid definition, vertical layers, and surface descriptors, and verify grid consistency with forecast parameters. Includes plotting a vertical profile and grouping by surface height.
-- [**10_icon_ch2_pollen_forecast.ipynb**](10_icon_ch2_pollen_forecast.ipynb) — Retrieve and load pollen forecasts as an xarray object, then convert from specific number concentration to volume concentration, and visualize the data using Python tools.
-- [**11_analysis_data.ipynb**](11_analysis_data.ipynb) — Retrieve and load KENDA CH1 analysis data and visualize the maximum wind gusts of a past hour using Python tools.
+- **RenkuLab**: launch the full project environment with all notebooks available.
 
+    [![launch - renku](https://renkulab.io/renku-badge.svg)](https://renkulab.io/p/meteoswiss/opendata-nwp-demos/sessions/01KME52HC2FZ6ZHB30SSFG08PW/start)
+
+- **Google Colab**: open a specific notebook directly in Colab.
+
+
+
+| Notebook | Description | Open in Colab |
+|---|---|---|
+| [**01_retrieve_process_precip.ipynb**](01_retrieve_process_precip.ipynb) | Retrieve and load precipitation forecasts as an Xarray object, then process, analyze, and visualize the data using Python tools. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MeteoSwiss/opendata-nwp-demos/blob/main/01_retrieve_process_precip.ipynb) |
+| [**02_download_soil_temp.ipynb**](02_download_soil_temp.ipynb) | Download forecast files to disk for offline storage, external tools, or advanced manual processing. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MeteoSwiss/opendata-nwp-demos/blob/main/02_download_soil_temp.ipynb) |
+| [**03_calculate_wind_speed.ipynb**](03_calculate_wind_speed.ipynb) | Retrieve wind component forecasts as Xarray objects and derive the horizontal wind speed using [meteodata-lab](https://meteoswiss.github.io/meteodata-lab/). | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MeteoSwiss/opendata-nwp-demos/blob/main/03_calculate_wind_speed.ipynb) |
+| [**04_calculate_rel_humidity.ipynb**](04_calculate_rel_humidity.ipynb) | Retrieve specific humidity, temperature and pressure as Xarray objects and compute relative humidity. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MeteoSwiss/opendata-nwp-demos/blob/main/04_calculate_rel_humidity.ipynb) |
+| [**05_interpolate_vertically.ipynb**](05_interpolate_vertically.ipynb) | Retrieve temperature forecasts and perform vertical interpolation from model levels to pressure levels or target altitude. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MeteoSwiss/opendata-nwp-demos/blob/main/05_interpolate_vertically.ipynb) |
+| [**06_calculate_global_rad_flux.ipynb**](06_calculate_global_rad_flux.ipynb) | Retrieve radiation fluxes and compute the global radiation flux using [meteodata-lab](https://meteoswiss.github.io/meteodata-lab/). | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MeteoSwiss/opendata-nwp-demos/blob/main/06_calculate_global_rad_flux.ipynb) |
+| [**07_where_will_it_rain_next_24h.ipynb**](07_where_will_it_rain_next_24h.ipynb) | Visualize the probability of precipitation over Switzerland for the next 24 hours. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MeteoSwiss/opendata-nwp-demos/blob/main/07_where_will_it_rain_next_24h.ipynb) |
+| [**08_where_will_the_sun_shine.ipynb**](08_where_will_the_sun_shine.ipynb) | Map the probability of experiencing over 6 hours of sunshine on the day after tomorrow. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MeteoSwiss/opendata-nwp-demos/blob/main/08_where_will_the_sun_shine.ipynb) |
+| [**09_constant_parameters.ipynb**](09_constant_parameters.ipynb) | Retrieve constant model parameters and verify grid consistency with forecast parameters. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MeteoSwiss/opendata-nwp-demos/blob/main/09_constant_parameters.ipynb) |
+| [**10_icon_ch2_pollen_forecast.ipynb**](10_icon_ch2_pollen_forecast.ipynb) | Retrieve, convert, and visualize ICON-CH2 pollen forecasts. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MeteoSwiss/opendata-nwp-demos/blob/main/10_icon_ch2_pollen_forecast.ipynb) |
+| [**11_analysis_data.ipynb**](11_analysis_data.ipynb) | Retrieve and visualize KENDA CH1 analysis data. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MeteoSwiss/opendata-nwp-demos/blob/main/11_analysis_data.ipynb) |
 ## 🚀 Getting Started
-### Option 1: Run in [RenkuLab](https://renkulab.io/)
 
-👉 [![launch - renku](https://renkulab.io/renku-badge.svg)](https://renkulab.io/p/meteoswiss/opendata-nwp-demos/sessions/01KME52HC2FZ6ZHB30SSFG08PW/start)
-1. Navigate to the folder `opendata-nwp-demos`.
-2. Click on the notebook you would like to try (e.g. `01_retrieve_process_precip.ipynb`). You can run the notebook without any further installtion.
+You can run the notebooks in three ways.
 
-### Option 2: Run locally
+### Option 1: Run the full project in RenkuLab
+
+Use RenkuLab if you want to start a project session with all notebooks available.
+
+[![launch - renku](https://renkulab.io/renku-badge.svg)](https://renkulab.io/p/meteoswiss/opendata-nwp-demos/sessions/01KME52HC2FZ6ZHB30SSFG08PW/start)
+
+1. Launch the RenkuLab session.
+2. Navigate to the `opendata-nwp-demos` folder.
+3. Open the notebook you would like to try.
+4. Run the notebook cells from top to bottom.
+
+The first cell installs the required Python dependencies.
+
+### Option 2: Open a single notebook in Google Colab
+
+Use Google Colab if you want to open one notebook directly.
+
+Click the **Open in Colab** badge next to the notebook in the table above, then run the notebook cells from top to bottom.
+
+The first cell installs the required Python dependencies.
+
+### Option 3: Run locally
 
 Clone the repository and install all required packages. This project requires **Python 3.11** and [Poetry](https://python-poetry.org/docs/) to manage dependencies and environments.
 
-1. #### Install Python dependencies using Poetry
+1. Install Python dependencies using Poetry:
+
     ```bash
     poetry install
     ```
 
-2. #### Install the Jupyter kernel
-    Activate the Poetry environment and register it as a Jupyter kernel so it can be used within notebooks:
+2. Install the Jupyter kernel:
+
     ```bash
     poetry run python -m ipykernel install --user --name=notebooks-nwp-env --display-name "Python (notebooks-nwp-env)"
     ```
 
-### Open and Run Notebooks
-
-You can run the notebooks using **Visual Studio Code** or **JupyterLab** — whichever you prefer.
-
-#### Option A: Using Visual Studio Code
-
-Make sure you have the following VS Code extensions installed:
-
-- Python (by Microsoft)
-- Jupyter (by Microsoft)
-
-Once installed:
-
-1. Open the project folder in VS Code.
-2. Open a Jupyter notebook file, for example `01_retrieve_process_precip.ipynb`.
-3. When prompted (or from the top-right kernel picker), select the kernel: **Python (notebooks-nwp-env)**.
-
-> 💡 If you don't see the environment, restart VS Code after running the kernel installation step.
-
----
-
-#### Option B: Using JupyterLab
-
-If you don't have VS Code or prefer using JupyterLab:
-
-1. Install JupyterLab using `pipx`:
-
-    ```bash
-    pipx install jupyterlab
-    ```
-
-    Don’t have `pipx` yet? Get it here: [https://pipx.pypa.io/stable/installation/](https://pipx.pypa.io/stable/installation/)
-
-2. Launch JupyterLab:
-
-    ```bash
-    jupyter lab
-    ```
-
-3. Open your notebook and select the kernel **Python (notebooks-nwp-env)** from the kernel menu.
+3. Open the notebook in VS Code or JupyterLab and select the kernel **Python (notebooks-nwp-env)**.
 
 ## 📚 Related Documentation
 
