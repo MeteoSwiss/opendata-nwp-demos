@@ -15,11 +15,10 @@ This repository provides Jupyter notebook examples for accessing and processing 
 
 You can run the notebooks in two ways:
 
+- **Google Colab**: open a specific notebook directly in Colab.
 - **RenkuLab**: launch the full project environment with all notebooks available.
 
     [![launch - renku](https://renkulab.io/renku-badge.svg)](https://renkulab.io/p/meteoswiss/opendata-nwp-demos/sessions/01KME52HC2FZ6ZHB30SSFG08PW/start)
-
-- **Google Colab**: open a specific notebook directly in Colab.
 
 
 
@@ -40,7 +39,15 @@ You can run the notebooks in two ways:
 
 You can run the notebooks in three ways.
 
-### Option 1: Run the full project in RenkuLab
+### Option 1: Open a single notebook in Google Colab
+
+Use Google Colab if you want to open one notebook directly.
+
+Click the **Open in Colab** badge next to the notebook in the table above, then run the notebook cells from top to bottom.
+
+The first cell installs the required Python dependencies.
+
+### Option 2: Run the full project in RenkuLab
 
 Use RenkuLab if you want to start a project session with all notebooks available.
 
@@ -50,14 +57,6 @@ Use RenkuLab if you want to start a project session with all notebooks available
 2. Navigate to the `opendata-nwp-demos` folder.
 3. Open the notebook you would like to try.
 4. Run the notebook cells from top to bottom.
-
-The first cell installs the required Python dependencies.
-
-### Option 2: Open a single notebook in Google Colab
-
-Use Google Colab if you want to open one notebook directly.
-
-Click the **Open in Colab** badge next to the notebook in the table above, then run the notebook cells from top to bottom.
 
 The first cell installs the required Python dependencies.
 
