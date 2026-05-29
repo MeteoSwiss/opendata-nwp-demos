@@ -62,7 +62,7 @@ The first cell installs the required Python dependencies.
 
 ### Option 3: Run locally
 
-Clone the repository and install all required packages. This project requires **Python 3.11** and [Poetry](https://python-poetry.org/docs/) to manage dependencies and environments.
+Clone the repository and install all required packages. This project requires **Python >=3.10,<3.13** and [Poetry](https://python-poetry.org/docs/) to manage dependencies and environments.
 
 1. Install Python dependencies using Poetry:
 
