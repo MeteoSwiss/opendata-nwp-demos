@@ -95,5 +95,10 @@ When making a change:
 2. Developer notebooks should use the `_clean` suffix, for example `09_notebook_clean.ipynb`.
 3. Commit the developer notebook **without outputs**. This keeps PR review manageable and avoids noisy diffs from generated output.
 4. Once the developer notebook has been reviewed, run it and save the corresponding notebook **with outputs** at the top level of the repository, without the `_clean` suffix. This is the version users will look at.
+### RenkuLab image
+
+The RenkuLab image was built from `pyproject.toml` to provide a compatible base environment. Since the notebooks install dependencies again in the first cell, the image does not need to be rebuilt after every dependency change.
+
+If the supported Python version changes, rebuild the RenkuLab image so the session starts with the correct Python version. To do this, open the RenkuLab project and click **Rebuild**.
 
 For more information about Renku at MeteoSwiss, see the [Renku documentation](https://meteoswiss.atlassian.net/wiki/spaces/MLOpsMCH/pages/346298461/Renku).
