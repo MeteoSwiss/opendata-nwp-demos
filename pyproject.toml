@@ -14,6 +14,8 @@ earthkit-plots = "0.3.3"
 ipykernel = "^6.29.5"
 rasterio = "^1.4.3"
 earthkit-geo = "^0.5.2"
+earthkit-transforms = "^1.0.0"
+geopandas = "^1.1.4"
 
 [tool.poetry.group.test]
 optional = true
