@@ -924,6 +924,33 @@ cartography = ["cartopy"]
 test = ["pytest", "pytest-cov"]
 
 [[package]]
+name = "earthkit-meteo"
+version = "1.0.0"
+description = "A Python library for meteorological computations"
+optional = false
+python-versions = ">=3.10"
+groups = ["main"]
+files = [
+    {file = "earthkit_meteo-1.0.0-py3-none-any.whl", hash = "sha256:c9b3a481a1f4b58c2b18f1edfc20b68d6226cbc2713bbc4616884fbc42b389df"},
+    {file = "earthkit_meteo-1.0.0.tar.gz", hash = "sha256:e80c6e8d0ca1492d6f9e0c607132ce008c7ebfea3c32d55a00101bdc36ada178"},
+]
+
+[package.dependencies]
+deprecation = "*"
+earthkit-utils = ">=1.0,<2.0"
+numpy = "*"
+
+[package.extras]
+all = ["earthkit-meteo[samples,scores,stats]"]
+dev = ["earthkit-meteo[all,docs,test]"]
+docs = ["docutils", "furo", "ipykernel", "nbconvert", "nbsphinx", "pygments (>=2.6.1)", "requests", "setuptools", "sphinx (>=7.3.7)", "sphinx-autoapi", "sphinx-copybutton", "sphinx-design", "sphinx-issues"]
+gpu = ["cupy", "torch"]
+samples = ["requests"]
+scores = ["scipy", "scores", "xarray"]
+stats = ["scipy (>=1.15)"]
+test = ["earthkit-data", "netcdf4", "pytest", "pytest-cov", "requests", "xarray"]
+
+[[package]]
 name = "earthkit-plots"
 version = "0.3.3"
 description = "Visualisation tools for earth science data"
@@ -4001,4 +4028,4 @@ type = ["pytest-mypy (>=1.0.1) ; platform_python_implementation != \"PyPy\""]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.11,<3.13"
-content-hash = "8c4e9f244972f0cb40cc401b355a2f84ea9849eff06e48fa304cc446198500ad"
+content-hash = "18f0ed5d03217ad017ac6fd0e838ea25c611994cdcfd31ca924c35f0c27fe935"
