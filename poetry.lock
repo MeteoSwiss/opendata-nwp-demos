@@ -886,14 +886,14 @@ zarr = ["zarr (>=3)"]
 
 [[package]]
 name = "earthkit-data-meteoswiss-opendata"
-version = "0.1.0"
+version = "0.2.0"
 description = "Earthkit-data plugin for accessing NWP MeteoSwiss Open Data."
 optional = false
 python-versions = ">=3.11"
 groups = ["main"]
 files = [
-    {file = "earthkit_data_meteoswiss_opendata-0.1.0-py3-none-any.whl", hash = "sha256:c636fbde6998ba040246aa7d337b47a91e6d423949e7dd1ab2d81877ce8630f6"},
-    {file = "earthkit_data_meteoswiss_opendata-0.1.0.tar.gz", hash = "sha256:b6339f7be13a2b96960f4df45216287cd8d4fda2fdd99c735919a5678e66a01a"},
+    {file = "earthkit_data_meteoswiss_opendata-0.2.0-py3-none-any.whl", hash = "sha256:24ecac4019a44de6ad44b97c2570e30eb2b083dc442afcb155eaeda0b6170463"},
+    {file = "earthkit_data_meteoswiss_opendata-0.2.0.tar.gz", hash = "sha256:75d8d577657c3edb3ececa6f7ef2d583d1195fea85e210ee9262b2efc4433e12"},
 ]
 
 [package.dependencies]
@@ -4028,4 +4028,4 @@ type = ["pytest-mypy (>=1.0.1) ; platform_python_implementation != \"PyPy\""]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.11,<3.13"
-content-hash = "18f0ed5d03217ad017ac6fd0e838ea25c611994cdcfd31ca924c35f0c27fe935"
+content-hash = "6f58feff1ae9b827075dca63b4cdceb4771c9348b21b17f3020048eb439624ea"

@@ -15,7 +15,7 @@ rasterio = "^1.4.3"
 earthkit-geo = "^0.5.2"
 earthkit-transforms = "^1.0.0"
 geopandas = "^1.1.4"
-earthkit-data-meteoswiss-opendata = "^0.1.0"
+earthkit-data-meteoswiss-opendata = "0.2.0"
 earthkit-meteo = "^1.0.0"
 
 [tool.poetry.group.test]
