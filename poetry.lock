@@ -1056,6 +1056,18 @@ findlibs = "*"
 numpy = "*"
 
 [[package]]
+name = "eccodes-cosmo-resources-python"
+version = "2.47.0.1"
+description = ""
+optional = false
+python-versions = ">=3.9"
+groups = ["main"]
+files = [
+    {file = "eccodes_cosmo_resources_python-2.47.0.1-py3-none-any.whl", hash = "sha256:0f929b7d864545ce1ef5e00c1b5d4cb85325b70d5784e6302b5be78c6d4ec67f"},
+    {file = "eccodes_cosmo_resources_python-2.47.0.1.tar.gz", hash = "sha256:54aa41a4d755b7c3b2cb860af8297b54c7073c872e80b85a00d83f3041f956ce"},
+]
+
+[[package]]
 name = "eccodeslib"
 version = "2.47.3.21"
 description = "\"eccodeslib\""
@@ -4028,4 +4040,4 @@ type = ["pytest-mypy (>=1.0.1) ; platform_python_implementation != \"PyPy\""]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.11,<3.13"
-content-hash = "6f58feff1ae9b827075dca63b4cdceb4771c9348b21b17f3020048eb439624ea"
+content-hash = "2fbfad9345d782b78f6e58b34344faa3ee15528d9c379f49761a9b2b7ae4e58e"

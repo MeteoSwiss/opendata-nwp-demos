@@ -17,6 +17,7 @@ earthkit-transforms = "^1.0.0"
 geopandas = "^1.1.4"
 earthkit-data-meteoswiss-opendata = "0.2.0"
 earthkit-meteo = "^1.0.0"
+eccodes-cosmo-resources-python = "^2.47.0.1"
 
 [tool.poetry.group.test]
 optional = true
