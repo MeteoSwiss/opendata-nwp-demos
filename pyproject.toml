@@ -8,12 +8,17 @@ package-mode = false
 
 
 [tool.poetry.dependencies]
-python = ">=3.10,<3.13"
-meteodata-lab = {extras = ["regrid"], version = "~0.7.2"}
+python = ">=3.11,<3.13"
 earthkit-plots = "0.3.3"
 ipykernel = "^6.29.5"
 rasterio = "^1.4.3"
 earthkit-geo = "^0.5.2"
+earthkit-transforms = "^1.0.0"
+geopandas = "^1.1.4"
+earthkit-data-meteoswiss-opendata = "0.2.0"
+earthkit-meteo = "^1.0.0"
+eccodes-cosmo-resources-python = "^2.47.0.1"
+meteodata-lab = "^0.8.0"
 
 [tool.poetry.group.test]
 optional = true
