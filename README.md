@@ -16,6 +16,9 @@ This repository provides Jupyter notebook examples for accessing and processing 
 You can run the notebooks in two ways:
 
 - **Google Colab**: open a specific notebook directly in Colab.
+> [!WARNING]
+> **Select the Colab runtime version `2026.07` before running the notebook.**
+> In Colab, go to **Runtime → Change runtime type → Runtime version → 2026.07**. Newer default runtimes may use a Python version that is not currently supported by this project.
 - **RenkuLab**: launch the full project environment with all notebooks available.
 
     [![launch - renku](https://renkulab.io/renku-badge.svg)](https://renkulab.io/p/meteoswiss/opendata-nwp-demos/sessions/01KME52HC2FZ6ZHB30SSFG08PW/start)
