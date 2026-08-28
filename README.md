@@ -13,16 +13,7 @@ This repository provides Jupyter notebook examples for accessing and processing 
 
 ## 📓 Notebooks
 
-You can run the notebooks in two ways:
-
-- **Google Colab**: open a specific notebook directly in Colab.
-> [!WARNING]
-> **Select the Colab runtime version `2026.07` before running the notebook.**
-> In Colab, go to **Runtime → Change runtime type → Runtime version → 2026.07**. Newer default runtimes may use a Python version that is not currently supported by this project.
-- **RenkuLab**: launch the full project environment with all notebooks available.
-
-    [![launch - renku](https://renkulab.io/renku-badge.svg)](https://renkulab.io/p/meteoswiss/opendata-nwp-demos/sessions/01KME52HC2FZ6ZHB30SSFG08PW/start)
-
+You can run the notebooks locally or directly in Google Colab.
 
 
 | Notebook | Description | Open in Colab |
@@ -40,7 +31,7 @@ You can run the notebooks in two ways:
 | [**11_analysis_data.ipynb**](11_analysis_data.ipynb) | Retrieve and visualize KENDA CH1 analysis data. | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/MeteoSwiss/opendata-nwp-demos/blob/main/11_analysis_data.ipynb) |
 ## 🚀 Getting Started
 
-You can run the notebooks in three ways.
+You can run the notebooks in two ways.
 
 ### Option 1: Open a single notebook in Google Colab
 
@@ -50,20 +41,7 @@ Click the **Open in Colab** badge next to the notebook in the table above, then 
 
 The first cell installs the required Python dependencies.
 
-### Option 2: Run the full project in RenkuLab
-
-Use RenkuLab if you want to start a project session with all notebooks available.
-
-[![launch - renku](https://renkulab.io/renku-badge.svg)](https://renkulab.io/p/meteoswiss/opendata-nwp-demos/sessions/01KME52HC2FZ6ZHB30SSFG08PW/start)
-
-1. Launch the RenkuLab session.
-2. Navigate to the `opendata-nwp-demos` folder.
-3. Open the notebook you would like to try.
-4. Run the notebook cells from top to bottom.
-
-The first cell installs the required Python dependencies.
-
-### Option 3: Run locally
+### Option 2: Run locally
 
 Clone the repository and install all required packages. This project requires **Python >=3.11,<3.13** and [Poetry](https://python-poetry.org/docs/) to manage dependencies and environments.
 
@@ -98,10 +76,3 @@ When making a change:
 2. Developer notebooks should use the `_clean` suffix, for example `09_notebook_clean.ipynb`.
 3. Commit the developer notebook **without outputs**. This keeps PR review manageable and avoids noisy diffs from generated output.
 4. Once the developer notebook has been reviewed, run it and save the corresponding notebook **with outputs** at the top level of the repository, without the `_clean` suffix. This is the version users will look at.
-### RenkuLab image
-
-The RenkuLab image was built from `pyproject.toml` to provide a compatible base environment. Since the notebooks install dependencies again in the first cell, the image does not need to be rebuilt after every dependency change.
-
-If the supported Python version changes, rebuild the RenkuLab image so the session starts with the correct Python version. To do this, open the RenkuLab project and click **Rebuild**.
-
-For more information about Renku at MeteoSwiss, see the [Renku documentation](https://meteoswiss.atlassian.net/wiki/spaces/MLOpsMCH/pages/346298461/Renku).
