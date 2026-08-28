@@ -2246,15 +2246,15 @@ files = [
 
 [[package]]
 name = "meteodata-lab"
-version = "0.8.0"
+version = "0.8.1"
 description = "A data post-processing framework on the basis of xarray."
 optional = false
-python-versions = "<3.13,>=3.10"
+python-versions = "<3.15,>=3.11"
 groups = ["main"]
 markers = "python_version == \"3.11\""
 files = [
-    {file = "meteodata_lab-0.8.0-py3-none-any.whl", hash = "sha256:5869e215d3a67c887eca03dbd716df48101c66155afc7843491ae88d5771334b"},
-    {file = "meteodata_lab-0.8.0.tar.gz", hash = "sha256:3d7a1a1cbd5faa269c8567bfb7004c6e93b3d98e5d94efc951c6922fd79f6d9b"},
+    {file = "meteodata_lab-0.8.1-py3-none-any.whl", hash = "sha256:28613416664653084fb8a6dfb725134c43baf5f883787650f09235f15e67614c"},
+    {file = "meteodata_lab-0.8.1.tar.gz", hash = "sha256:b0c705cf7e256686c964f57fc12932900d77623f97df758f8d3a34efc073ee11"},
 ]
 
 [package.dependencies]
